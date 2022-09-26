@@ -1,0 +1,317 @@
+@font-face {
+    font-family: "Coda";
+    src: url("../font/Coda-Regular.ttf");
+}
+
+html { scroll-behavior: smooth; }
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    font-family: "Coda" !important;
+}
+
+h1{
+font-size: 4.6em ;
+}
+h2{
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+#decouvrir p, h3{
+    color: #777;
+}
+
+.navbar{
+    height: 80px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-size: 2em;
+    text-transform: uppercase;
+    z-index: 1;
+    font-family: "Coda" !important;
+}
+
+.nav_list{
+    height: 100%;
+    width: 60%;
+}
+
+.nav_list ul{ 
+    height: 100%;
+    margin-top: 0;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.nav_item{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+a:hover {
+    color: rgb(210, 10, 10, 0.6);
+ 
+}
+
+
+.logo{
+    height: 100%;
+}
+
+.logo img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #d20a0a;
+    height: 100%;
+}
+
+
+
+section {
+    min-height: 100%;
+    background: url('../img/background.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+#accueil h1 {
+    color: white;
+    border: 2px solid #d20a0a;
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    border-radius: 4px;
+    background-color: #d20a0a;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#visite{
+    background-size: 0 0;
+    background-color: #CDCDCD;
+}
+
+#decouvrir {
+    background-size: 0 0;
+}
+
+#visite h2, #jeu h2 {
+    color: white;
+    border: 2px solid #d20a0a;
+    width: 20%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+    background-color: #d20a0a;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+#decouvrir h2 {
+    color: white;
+    border: 2px solid #d20a0a;
+    width: 20%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+    background-color: #d20a0a;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+#formulaire_jeu {
+    min-height: 100%;
+    background: url('../img/background.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70px;
+}
+
+#jeu_display{
+    background-color: rgb(255,255,255,0.7);
+    border-radius: 4px;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.lignes{
+    width: 100%;
+}
+
+.raw_1, .raw_2, .raw_3, .raw_4, .raw_5, .raw_0{
+    width: 100%;
+    border-bottom: black 2px solid;
+    display: flex;
+    justify-content: center;
+}
+
+.letter{
+    border: 2px solid black;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.found_letter{
+background-color: green;}
+
+.not_found_letter{
+    background-color: #d20a0a;}
+.contained_letter{
+        background-color: yellow;}
+
+#game_message{
+    margin: 0 auto;
+    font-weight: bold;
+    width: 50%;
+    text-align: center;
+    color: #d20a0a;
+}
+
+#btn_game{
+    background-color: #d20a0a;
+    color: white;
+    font-size: 1.5em;
+    width: 50%;
+    border-radius: 4px;
+    margin: 0 auto;
+    border: none;
+    height: 50px;
+}
+
+#btn_game:hover{
+    cursor: pointer;
+}
+
+#jeu input{
+    width: 50%;
+    margin: 0 auto;
+    height: 30px;
+}
+
+.combat{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+.fight{
+    width: 32%;
+    text-align: center;
+    background-color: rgb(255, 255, 255, 0.7);
+    border-radius: 2%;
+}
+
+.fight img{
+    width: 85%;
+    height: 80%;
+}
+
+#visite{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#formulaire{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    color: black;
+    background-color: rgb(255, 255, 255, 0.7);
+    border-radius: 4px;
+    height: 350px;
+}
+
+#formulaire input{
+    height: 30px;
+    border: 2px solid #d20a0a;
+    border-radius: 5px;
+    border:2px solid black;
+}   
+
+.assurance{
+    display: flex;
+}
+
+.form_group{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: start  ;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.form_group label{
+    border: #d20a0a 2px solid;
+    height: 30px;
+    border-radius: 2px;
+    width: 40%;
+    text-align: center;
+    background-color: #d20a0a;
+    text-align: center;
+    border:2px solid black;
+    border-radius: 5px;
+}
+
+.form_group input{
+    height: 30px;
+}
+
+.btn{
+    width: 25%;
+    margin: 0 auto;
+    background-color: #d20a0a;
+}
+
+.btn:hover{
+    background-color: black;
+    color: #d20a0a;
+    cursor: pointer;
+}
